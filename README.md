@@ -1,4 +1,4 @@
-# Introductory applied machine learning (INFR10069/11152/11182)
+# Introductory Applied Machine Learning (INFR10069/11152/11182)
 
 These instructions are written for set up on DICE / a Unix environment.
 
@@ -119,21 +119,21 @@ that conda installed a dependency of numpy (a python package)...python!
     * `conda env list`
 
 
-## 4. Get course material
+## 4. Get course lab material
 
 Before installing required modules, we need to obtain the repository since it includes the specifications of the packages to use (as well as all lab material). Within your terminal:
 
 1. Navigate back to your home directory: `cd`
 1. Now you have two options:
     1. If **and only if** you are familiar and confident with using Git/GitHub, you can initialize a git directory, add the above repo as remote and pull everything into your local directory, something like:
-        * `git clone https://github.com/michael-camilleri/IAML2018 iaml2018
+        * `git clone https://github.com/amosstorkey/iaml-labs iaml-labs
     1. **OTHERWISE**, we recommend that you directly download a .zip file from https://github.com/michael-camilleri/IAML2018 which will contain everything you need and save it in the folder you have just created. You can do this from the terminal by typing (this also makes the directory structure equivalent to that obtained by git clone):
-        * `wget https://github.com/michael-camilleri/IAML2018/archive/master.zip`
+        * `wget https://github.com/amosstorkey/iaml-labs/archive/master.zip`
         * `unzip master.zip`
-        * `mv IAML2018-master iaml2018`
+        * `mv iaml-labs-master iaml-labs`
         * `rm master.zip`
 1. Navigate to the new directory
-    * `cd iaml2018`
+    * `cd iaml-labs`
 
 ### *IMPORTANT*
 Supporting and teaching git is not in scope for this course so please only use it if you are happy to google your own solutions! That being said, git is a better alternative if you are familiar with it. We reccommend that you work with your own branch/fork as the git repository is read-only.
@@ -155,7 +155,7 @@ stored. *You will have to follow this procedure for all labs and assignments.*
 
 1. Activate the conda environment: `source activate py3iaml`
 2. Enter the directory where you downloaded the course material:
-`cd iaml_%COURSE_YEAR%/iaml-master`
+`cd iaml-labs/iaml-master`
 3. Start a jupyter notebook
     * `jupyter notebook`
 4. This should automatically open your browser
