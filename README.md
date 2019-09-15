@@ -127,7 +127,7 @@ Before installing required modules, we need to obtain the repository since it in
 1. Now you have two options:
     1. If **and only if** you are familiar and confident with using Git/GitHub, you can initialize a git directory, add the above repo as remote and pull everything into your local directory, something like:
         * `git clone https://github.com/amosstorkey/iaml-labs iaml-labs
-    1. **OTHERWISE**, we recommend that you directly download a .zip file from https://github.com/michael-camilleri/IAML2018 which will contain everything you need and save it in the folder you have just created. You can do this from the terminal by typing (this also makes the directory structure equivalent to that obtained by git clone):
+    1. **OTHERWISE**, we recommend that you directly download a .zip file from https://github.com/amosstorkey/iaml-labs which will contain everything you need and save it in the folder you have just created. You can do this from the terminal by typing (this also makes the directory structure equivalent to that obtained by git clone):
         * `wget https://github.com/amosstorkey/iaml-labs/archive/master.zip`
         * `unzip master.zip`
         * `mv iaml-labs-master iaml-labs`
