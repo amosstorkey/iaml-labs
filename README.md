@@ -6,9 +6,7 @@ These instructions are written for set up on DICE / a Unix environment.
 We recommend two options for working remotely (we prefer that you use option (1): i.e. your own machine)
 
 1. Use your own machine! Conda installation should work fine on your own
-computer. You must still have a DICE account: when submitting assignments, you
-will need to copy work up to DICE and submit from there. Instructions will be
-given for this in each assignment
+computer.
 1. Use virtual dice - a virtual machine emulated on your own computer connected
 to the dice network. Please read here for installation instructions and more:
 http://computing.help.inf.ed.ac.uk/vdice
