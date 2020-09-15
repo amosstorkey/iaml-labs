@@ -2,25 +2,6 @@
 
 These instructions are written for set up on DICE / a Unix environment.
 
-**Distance learners please note**:
-We recommend two options for working remotely (we prefer that you use option (1): i.e. your own machine)
-
-1. Use your own machine! Conda installation should work fine on your own
-computer. You must still have a DICE account: when submitting assignments, you
-will need to copy work up to DICE and submit from there. Instructions will be
-given for this in each assignment
-1. Use virtual dice - a virtual machine emulated on your own computer connected
-to the dice network. Please read here for installation instructions and more:
-http://computing.help.inf.ed.ac.uk/vdice
-
-**Windows users please note**:
-* After conda installation, all instructions are much the same
-* please follow conda installation instructions on their
-website [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/windows.html)
-* to activate the `py3iaml` environment, note that you don't type `source activate py3iaml`
-but instead use `conda activate py3iaml`
-* you can ignore section 3b (though you can google windows equivalents of all
-  the Unix commands given)
 
 # Setting up on DICE or Unix
 
@@ -37,6 +18,21 @@ the terminal. We are expecting you to enter these commands in **by hand
 one-by-one**. This is for pedagogical reasons, and to help detect new issues.
 Please read and heed any warnings *and especially errors* you may encounter. We
 are on standby in the labs to help if required.
+
+## 0. Using DICE or your own machine
+For this course, you can either use a DICE computer remotely or your own personal computer. We have verified that these instructions work under DICE/Linux and while they should work on your machine too, we can not guarantee this for everyone.
+
+If you choose to work on DICE, there are two main ways of using it remotely -- either via RDP (remote desktop) or via SSH. The first one is recommended, as it is the easiest. If you are running Linux, running:
+
+```
+xfreerdp +glyph-cache /relax-order-checks /u:s1234567 /v:s1234567.remote.inf.ed.ac.uk &
+```
+
+will open a remote DICE session. Replace `s1234567` with your username. Then you can proceed with the setup instructions below. Guides for other operating systems can be found here: http://computing.help.inf.ed.ac.uk/remote-desktop.
+
+*If you have used SSH before/know what you are doing*, you can also use the university SSH gateways. The guide is here: http://computing.help.inf.ed.ac.uk/external-login . Beware that you will need to setup port forwarding to be able to access Jupyter notebooks.
+
+Finally, there are some instructions for Windows users at the end of this README.
 
 ## 1. Check your available space
 Firstly, please note that your space on DICE is allocated dynamically. If you are
@@ -258,3 +254,25 @@ delete the other.
 
 - https://conda.io/docs/user-guide/tasks/manage-environments.html#sharing-an-environment
 - https://conda.io/docs/user-guide/install/linux.html#uninstalling-anaconda-or-miniconda
+
+
+## Miscellaneous
+**Distance learners please note**:
+We recommend two options for working remotely (we prefer that you use option (1): i.e. your own machine)
+
+1. Use your own machine! Conda installation should work fine on your own
+computer. You must still have a DICE account: when submitting assignments, you
+will need to copy work up to DICE and submit from there. Instructions will be
+given for this in each assignment
+1. Use virtual dice - a virtual machine emulated on your own computer connected
+to the dice network. Please read here for installation instructions and more:
+http://computing.help.inf.ed.ac.uk/vdice
+
+**Windows users please note**:
+* After conda installation, all instructions are much the same
+* please follow conda installation instructions on their
+website [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/windows.html)
+* to activate the `py3iaml` environment, note that you don't type `source activate py3iaml`
+but instead use `conda activate py3iaml`
+* you can ignore section 3b (though you can google windows equivalents of all
+  the Unix commands given)
